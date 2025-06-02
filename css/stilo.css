@@ -9,52 +9,71 @@ body{font-family:"Comic Relief", system-ui;} /* significa q todo mi body va a te
 
 /* header*/
 
+.nav-item a{
+    font-size: 20px;
+    color: white;
+}
+
+.nav-item:hover{
+    background-color: white;
+    color: rgb(2, 11, 63);
+
+}
+
 header{background-color: rgb(2, 11, 63);
-    height: 75px; 
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%; 
     padding: 5px;
-    display: flex; 
-    justify-content: start;
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
 }
 
 /*-- diplay flex-- (prop de flexbox) se aplica siempre al padre-- seguida de justify content que siempre se aplica en
 conjunto con aling item*/
-header nav ul {
-    list-style: none;
-    display: flex;
-}
+
 
 header nav ul li {
     margin: 30px;
 }
+
 /*la especificidad es mejor*/
-header nav ul li a {text-decoration: none; color: white;}
+
 
 /* main */
-
-.prin-img{
-    
-    height: auto;
-    width: 100vw; /* esta medida hace que la img me ocupe el ancho total de la pantalla*/
-    margin: 3px;}
+/*vw; esta medida hace que la img me ocupe el ancho total de la pantalla*/
 
 .prin{
-    
+    background-image: url(../img/Recetas_de_galletas.jpeg);
+    height: 450px;
+    margin: 5px;
     background-size: cover;
-    background-position:center;
-    font-size: 70px; 
+    background-position:center; 
     color:  rgb(2, 11, 63);
-    background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content:space-between;
     align-items: center;
+}
+
+.prin h1{
+    font-size: 60px;
+    color: rgb(2, 11, 63);
+    font-weight: bolder;
+    padding: 20px;
+
 }
 
 .prin h2{
     text-align: center; 
-    font-size: 40px; 
-    color: rgb(2, 11, 63);}
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(2, 11, 63);
+    padding: 20px;
+}
     
 .whatsapp{
 background-image: url(../img/whatsapp.png);
@@ -65,6 +84,25 @@ position: fixed;
 bottom: 10px;
 right: 15px;
 }
+/*pages contacto*/
+
+.formulario{
+    background-color: rgba(3, 47, 34, 0.663);
+    font-size: 20px;
+    color: rgb(2, 11, 63);
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn{
+    background-color: rgb(2, 11, 63);
+}
+
+.boton :hover{
+    background-color: white;
+    color: rgb(2, 11, 63);
+}
+
 
 /* main-- pages nosotros*/
 
@@ -74,11 +112,36 @@ grid-template-columns: 1fr 2fr 1fr;
 grid-template-rows: 200px 250px 200px;
 gap:5px;
 grid-auto-rows: 200px;
+margin: 5px;
+}
+
+.principal-grid div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.principal-grid div h2 {
+    text-align:center;
+    font-size: 50px;
+    color: rgb(2, 11, 63);
+}
+
+.principal-grid div p{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(2, 11, 63);
+}
+
+.principal-grid div h3{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(2, 11, 63);
 }
 
 .cuadro2{
 grid-row: span 2;
-background-color: rgb(134, 75, 26);
+
 
 }
 
@@ -92,9 +155,8 @@ background-color: rgb(134, 75, 26);
 
 .grid-item{
     position: relative;
-    background-color: aqua;
-    border: 5px solid black;
-}
+    background-color:rgba(3, 47, 34, 0.663);}
+
 
 
 
@@ -102,47 +164,121 @@ background-color: rgb(134, 75, 26);
 
 .prod1 h2{
     text-align: center ;
-    background-color: rgb(134, 75, 26);
+    background-color: rgba(3, 47, 34, 0.663);
     font-family:"Comic Relief", system-ui;
     font-size: 50px;
     color: rgb(2, 11, 63);
-    padding: 30px;
+    padding: 20px;
+    margin: 5px;
 
 }
-
-.img-prod {
-    width: 100px;
-    height: 150px;
+.prod2 div img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    
 }
 
-.prod1 .prod2 div {
+.prod2 div {
     width: 250px;
     height: 350px;
-    border: 2px solid rgb(134, 75, 26);
+    border: 2px solid rgb(2, 11, 63);
     text-align: center;
-    margin: 10px;
+    margin: 5px;
+    background-color: rgba(3, 47, 34, 0.663);
 }
 
-.prod2 div a{
-    border: 3px solid rgb(134, 75, 26);
-    list-style: none;
-    padding: 7px;
-        
+.prod2 div h3{
+    font-size: 15px;
+    color:rgb(2, 11, 63);
+    font-weight: bolder;
 }
 
-.prod1 .prod2{
+.prod2 div p{
+    font-size: 15px;
+    color: rgb(2, 11, 63);
+    font-weight:bold;
+}
+
+.prod2 div a button{
+    padding: 5px;
+    background-color: rgb(2, 11, 63);
+    color: white;    
+}
+
+.prod2 div a button:hover{
+    background-color: white;
+    color: rgb(2, 11, 63);
+    
+}
+
+.padre-cajas .prod2{
+    background-color: white;
+    margin:5px;
+    width: 100%;
+    height: 100%;
     display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items: center;
-    background-color: aqua;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    
+}
+/* pages promos*/
+
+.promocion{
+    padding: 5px;
+}
+
+.carousel-inner img {
+    width: 300px;
+    height: 500px;
+    object-fit:cover;
+}
+
+.carousel-item div h4 {
+    color: rgb(2, 11, 63);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.carousel-item div p{
+    color: rgb(2, 11, 63);
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 /* footer*/
+
+
 footer {
-    background-color: rgba(2, 11, 63, 0.89);
+    background-color: rgb(2, 11, 63);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info-cajas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-cajas div {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    
 }
 
 footer a img {
-width: 40px; 
-height: 40px;}
+width: 20px; 
+height: 20px;
+
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-widht: 560px) {
+    header{  flex-direction: column;
+    }    
+}
