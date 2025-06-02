@@ -47,11 +47,12 @@ header nav ul li {
 /*vw; esta medida hace que la img me ocupe el ancho total de la pantalla*/
 
 .prin{
-    background-image: url(../img/Recetas_de_galletas.jpeg);
+    background-image: url(../img/img-taza.jpg);
     height: 450px;
     margin: 5px;
-    background-size: cover;
-    background-position:center; 
+    background-size:cover;
+    background-position:center;
+    background-repeat:repeat;
     color:  rgb(2, 11, 63);
     display: flex;
     flex-direction: column;
@@ -230,9 +231,10 @@ grid-row: span 2;
 }
 
 .carousel-inner img {
-    width: 300px;
-    height: 500px;
+    width: 2500px;
+    height: 450px;
     object-fit:cover;
+    background-position: center;
 }
 
 .carousel-item div h4 {
