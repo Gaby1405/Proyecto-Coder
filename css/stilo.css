@@ -9,7 +9,7 @@ body{font-family:"Comic Relief", system-ui;} /* significa q todo mi body va a te
 
 /* header*/
 
-.nav-item a{
+/*.nav-item a{
     font-size: 20px;
     color: white;
 }
@@ -18,10 +18,11 @@ body{font-family:"Comic Relief", system-ui;} /* significa q todo mi body va a te
     background-color: white;
     color: rgb(2, 11, 63);
 
-}
+}*/
 
-header{background-color: rgb(2, 11, 63);
+header{background-color: #8C7870 ;
     position: relative;
+    color:white;
     top: 0;
     height: 100%;
     width: 100%; 
@@ -31,6 +32,21 @@ header{background-color: rgb(2, 11, 63);
     justify-content:center;
     align-items: center;
 }
+
+.container-fluid{
+    background-color: #8C7870  ;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 30px;
+}
+
+
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 /*-- diplay flex-- (prop de flexbox) se aplica siempre al padre-- seguida de justify content que siempre se aplica en
 conjunto con aling item*/
@@ -52,8 +68,7 @@ header nav ul li {
     margin: 5px;
     background-size:cover;
     background-position:center;
-    background-repeat:repeat;
-    color:  rgb(2, 11, 63);
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -62,17 +77,16 @@ header nav ul li {
 
 .prin h1{
     font-size: 60px;
-    color: rgb(2, 11, 63);
+    color: #8C0303;
     font-weight: bolder;
     padding: 20px;
-
 }
 
 .prin h2{
     text-align: center; 
     font-size: 50px;
     font-weight: bolder;
-    color: rgb(2, 11, 63);
+    color: #8C0303;
     padding: 20px;
 }
     
@@ -88,20 +102,20 @@ right: 15px;
 /*pages contacto*/
 
 .formulario{
-    background-color: rgba(3, 47, 34, 0.663);
+    background-color:#E5E3D6;
     font-size: 20px;
-    color: rgb(2, 11, 63);
+    color: #8C0303;
     padding: 10px;
     margin: 5px;
 }
 
 .btn{
-    background-color: rgb(2, 11, 63);
+    background-color:#8C0303 ;
 }
 
-.boton :hover{
+.boton:hover{
     background-color: white;
-    color: rgb(2, 11, 63);
+    color: #8C0303;
 }
 
 
@@ -125,19 +139,19 @@ margin: 5px;
 .principal-grid div h2 {
     text-align:center;
     font-size: 50px;
-    color: rgb(2, 11, 63);
+    color: #8C0303;
 }
 
 .principal-grid div p{
     text-align: center;
     font-size: 20px;
-    color: rgb(2, 11, 63);
+    color:  #8C0303;
 }
 
 .principal-grid div h3{
     text-align: center;
     font-size: 30px;
-    color: rgb(2, 11, 63);
+    color:#8C0303 ;
 }
 
 .cuadro2{
@@ -156,7 +170,8 @@ grid-row: span 2;
 
 .grid-item{
     position: relative;
-    background-color:rgba(3, 47, 34, 0.663);}
+    background-color:#E5E3D6;
+}
 
 
 
@@ -165,10 +180,10 @@ grid-row: span 2;
 
 .prod1 h2{
     text-align: center ;
-    background-color: rgba(3, 47, 34, 0.663);
+    background-color:#E5E3D6;
     font-family:"Comic Relief", system-ui;
     font-size: 50px;
-    color: rgb(2, 11, 63);
+    color: #8C0303;
     padding: 20px;
     margin: 5px;
 
@@ -183,33 +198,33 @@ grid-row: span 2;
 .prod2 div {
     width: 250px;
     height: 350px;
-    border: 2px solid rgb(2, 11, 63);
+    border: 2px solid #8C0303;
     text-align: center;
     margin: 5px;
-    background-color: rgba(3, 47, 34, 0.663);
+    background-color:#E5E3D6;
 }
 
 .prod2 div h3{
     font-size: 15px;
-    color:rgb(2, 11, 63);
+    color:#8C0303;
     font-weight: bolder;
 }
 
 .prod2 div p{
     font-size: 15px;
-    color: rgb(2, 11, 63);
+    color: #8C0303;
     font-weight:bold;
 }
 
 .prod2 div a button{
     padding: 5px;
-    background-color: rgb(2, 11, 63);
+    background-color: #8C0303;
     color: white;    
 }
 
 .prod2 div a button:hover{
     background-color: white;
-    color: rgb(2, 11, 63);
+    color: #8C0303 ;
     
 }
 
@@ -236,19 +251,14 @@ grid-row: span 2;
     object-fit: cover;
 }
 
-.img-promo{
-    width: 5px;
-    height: 5px;
-}
-
 .carousel-item div h4 {
-    color: rgb(2, 11, 63);
+    color: #8C0303;
     font-size: 30px;
     font-weight: bolder;
 }
 
 .carousel-item div p{
-    color: rgb(2, 11, 63);
+    color: #8C0303;
     font-size: 20px;
     font-weight: bolder;
 }
@@ -257,7 +267,7 @@ grid-row: span 2;
 
 
 footer {
-    background-color: rgb(2, 11, 63);
+    background-color:#8C7870;
     display: flex;
     flex-direction: column;
     
@@ -284,7 +294,8 @@ height: 20px;
 
 /* MEDIA QUERIES*/
 
-@media screen and (max-widht: 560px) {
+@media screen and (max-width: 560px) {
     header{  flex-direction: column;
     }    
 }
+
