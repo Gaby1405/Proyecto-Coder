@@ -9,17 +9,6 @@ body{font-family:"Comic Relief", system-ui;} /* significa q todo mi body va a te
 
 /* header*/
 
-/*.nav-item a{
-    font-size: 20px;
-    color: white;
-}
-
-.nav-item:hover{
-    background-color: white;
-    color: rgb(2, 11, 63);
-
-}*/
-
 header{background-color: #8C7870 ;
     position: relative;
     color:white;
@@ -97,6 +86,43 @@ header nav ul li {
     color: #8C0303;
     padding: 20px;
 }
+
+.reseñas .caja-reseñas{
+    height: 700px;
+    background-color: #E5E3D6;
+    gap:80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja-reseñas div {
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+}
+
+.caja-reseñas div h2{
+    color:#8C0303;
+    font-size: 20px;
+}
+
+.caja-reseñas div h3{
+    color:black;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.sub-reseña h2{
+    background-color:#8C7870;
+    font-size: 40px;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    height: 80px;
+    padding: 10px;
+}
+
     
 .whatsapp{
 background-image: url(../img/whatsapp.png);
