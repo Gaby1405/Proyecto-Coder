@@ -1,0 +1,19 @@
+{
+  "name": "gaby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaby1405/Proyecto-Coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaby1405/Proyecto-Coder/issues"
+  },
+  "homepage": "https://github.com/Gaby1405/Proyecto-Coder#readme",
+  "description": ""
+}

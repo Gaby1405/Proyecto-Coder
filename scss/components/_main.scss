@@ -1,0 +1,105 @@
+//*PAGES CONTACTOS*//
+
+.formulario{
+    background-color:#E5E3D6;
+    font-size: 20px;
+    color: #8C0303;
+    padding: 10px;
+    margin: 5px;
+    
+}
+.btn{
+    background-color:#8C0303 ;
+
+    &:hover{
+        background-color: white;
+    color: #8C0303;
+    }
+
+}
+
+//*PAGES PRINCIPAL*//
+
+.prin{
+    background-image: url(../img/img-taza.jpg);
+    height: 450px;
+    margin: 5px;
+    background-size:cover;
+    background-position:center;
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+
+    h1{
+    font-size: 60px;
+    color: #8C0303;
+    font-weight: bolder;
+    padding: 20px;
+
+    }
+
+    h2{
+    text-align: center; 
+    font-size: 50px;
+    font-weight: bolder;
+    color: #8C0303;
+    padding: 20px;
+
+    }
+}
+
+.sub-reseñas{
+    h2{
+    background-color:#8C7870;
+    font-size: 40px;
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    height: 80px;
+    padding: 10px;
+    }
+}
+
+.reseñas{
+
+    .caja-reseñas{
+    height: 700px;
+    background-color: #E5E3D6;
+    gap:80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    }
+    div{
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+
+    }
+
+    h2{
+    color:#8C0303;
+    font-size: 20px;
+
+    }
+
+    h3{
+    color:black;
+    font-size: 15px;
+    font-weight: bolder;
+
+    }
+}
+
+.whatsapp{
+background-image: url(../img/whatsapp.png);
+width: 60px;
+height: 60px;
+background-size: 60px;
+position: fixed;
+bottom: 10px;
+right: 15px;
+}
