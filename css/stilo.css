@@ -314,6 +314,7 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
+    margin:3px;
 }
 
 .parte1footer h3{
@@ -321,7 +322,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    font-size: 25px;
 }
 
 .parte1footer h3::before,
@@ -332,24 +334,99 @@ content: ' ';
 border-bottom: 1px solid white ;
 }
 
-.parte2footer{
+.cajaparte1footer{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
+    gap: 45px;
 }
 
-
-.linea{  
+.linea1{
 border: none;
 border-top: 1px solid white;
 width: 100%;
 margin: 30px 0 0 0;
 }
 
+a img {
+transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+a:hover img {
+transform: scale(1.2)}
+
+.parte2footer h3{
+font-size: 25px;
+padding: 10px;
+}
+
+.parte2footer h4{
+    font-size: 20px;
+}
+
+.parte2footer{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-container{
+display: flex;
+align-items: center;
+gap:10px;
+
+}
+
+.img-container .texto{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.linea2{  
+border: none;
+border-top: 1px solid white;
+width: 100%;
+margin: 30px 0 0 0;
+}
+
+.parte3footer h3{
+text-align: center;
+padding: 10px;
+font-size: 25px;
+}
+
+.parte3footer h4{
+    font-size: 20px;
+}
+
+.cajaparte3footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.cajaparte3footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.cajaparte3footer a:hover{
+    color: #8C0303;
+
+}
+
+
+.mapa{
+    width: 350px;
+    height: 150px;
+}
 
 footer a img {
-width: 20px; 
-height: 20px;
+width: 50px; 
+height: 45px;
 
 }
 
@@ -360,3 +437,41 @@ height: 20px;
     }    
 }
 
+@media (max-width: 900px) {
+.cajaparte1footer,
+.parte2footer,
+.cajaparte3footer {
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.cajaparte3footer {
+padding: 0;
+}
+
+.mapa {
+width: 100%;
+height: auto;
+max-height: 200px;
+}
+}
+
+@media (max-width: 480px) {
+    .parte1footer h3,
+    .parte2footer h3,
+    .parte3footer h3 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .parte2footer h4,
+    .parte3footer h4 {
+        font-size: 16px;
+    }
+
+    footer a img {
+        width: 40px;
+        height: 35px;
+    }
+}
