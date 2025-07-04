@@ -100,18 +100,25 @@ header nav ul li {
 }
 
 .reseñas .caja-reseñas{
-    height: 700px;
+    height: auto;
     background-color: #E5E3D6;
-    gap:80px;
+    gap:50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .caja-reseñas div {
-    width: 500px;
+    width: 250px;
     height: 500px;
     margin: 5px;
+    border: 2px solid #8C0303;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .caja-reseñas div h2{
@@ -125,6 +132,18 @@ header nav ul li {
     font-weight: bolder;
 }
 
+.caja-reseñas div p{
+    font-size: 15px;
+}
+
+.caja-reseñas div img{
+    margin: 15px auto 0 auto ;
+    width: 180px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px #8C0303;
+}
 
     
 .whatsapp{
@@ -139,20 +158,23 @@ right: 15px;
 /*pages contacto*/
 
 .formulario{
-    background-color:#E5E3D6;
-    font-size: 20px;
+    background-color:white;
+    font-size: 18px;
     color: #8C0303;
     padding: 10px;
     margin: 5px;
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .btn{
     background-color:#8C0303 ;
-}
+    color: white;}
 
-.boton:hover{
-    background-color: white;
-    color: #8C0303;
+.btn:hover{
+    background-color: #8C7870;
 }
 
 
@@ -177,11 +199,12 @@ margin: 5px;
     text-align:center;
     font-size: 50px;
     color: #8C0303;
+    padding: 10px;
 }
 
 .principal-grid div p{
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     color:  #8C0303;
 }
 
@@ -263,7 +286,7 @@ grid-row: span 2;
 }
 
 .prod2 div a button:hover{
-    background-color: white;
+    background-color: #8C7870;
     color: #8C0303 ;
 }
 
@@ -284,26 +307,39 @@ grid-row: span 2;
 
 .promocion{
     padding: 5px;
-    width: 225vh;
-    height: 500px;
+    width: 100%;
+    height: auto;
 }
 
 .carousel-inner div img{
-    width: 225vh;
-    height: 480px;
+    width: 100%;
+    height: 80vh;
     object-fit: cover;
 }
 
+
 .carousel-item div h4 {
     color: #8C0303;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
 .carousel-item div p{
     color: #8C0303;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bolder;
+}
+
+.carousel-item .letras{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.carousel-item .letras1{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bolder ;
 }
 
 /* footer*/
@@ -342,7 +378,6 @@ border-bottom: 1px solid white ;
 }
 
 .linea1{
-border: none;
 border-top: 1px solid white;
 width: 100%;
 margin: 30px 0 0 0;
@@ -374,18 +409,9 @@ padding: 10px;
 .img-container{
 display: flex;
 align-items: center;
-gap:10px;
-
-}
-
-.img-container .texto{
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
 }
 
 .linea2{  
-border: none;
 border-top: 1px solid white;
 width: 100%;
 margin: 30px 0 0 0;
@@ -406,6 +432,7 @@ font-size: 25px;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .cajaparte3footer a{
@@ -422,6 +449,8 @@ font-size: 25px;
 .mapa{
     width: 350px;
     height: 150px;
+    padding: 10px;
+    
 }
 
 footer a img {
@@ -437,27 +466,56 @@ height: 45px;
     }    
 }
 
-@media (max-width: 900px) {
-.cajaparte1footer,
-.parte2footer,
-.cajaparte3footer {
-flex-direction: column;
-align-items: center;
-gap: 20px;
+@media screen and (max-width: 768px) {
+    .caja-reseñas div {
+        width: 45%;
+    }
+
+    .caja-reseñas div img {
+        width: 140px;
+    }
+
+    .prin h1, .prin h2 {
+        font-size: 35px;
+    }
+
+    .sub-reseña h2 {
+        font-size: 30px;
+        height: auto;
+    }
+
+    .cajaparte1footer,
+    .parte2footer,
+    .cajaparte3footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cajaparte3footer {
+        padding: 0;
+    }
+
+    .mapa {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
 }
 
-.cajaparte3footer {
-padding: 0;
-}
+@media screen and (max-width: 480px) {
+    .caja-reseñas div {
+        width: 95%;
+    }
 
-.mapa {
-width: 100%;
-height: auto;
-max-height: 200px;
-}
-}
+    .prin h1, .prin h2 {
+        font-size: 25px;
+    }
 
-@media (max-width: 480px) {
+    .sub-reseña h2 {
+        font-size: 24px;
+    }
+
     .parte1footer h3,
     .parte2footer h3,
     .parte3footer h3 {
@@ -474,4 +532,80 @@ max-height: 200px;
         width: 40px;
         height: 35px;
     }
+
+    .whatsapp {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+        bottom: 5px;
+        right: 10px;
+    }
+}
+
+/*titulo de pag prod*/
+
+@media screen and (max-width: 768px) {
+    .prod1 h2 {
+        font-size: 40px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .prod1 h2 {
+        font-size: 28px;
+        padding: 10px;
+    }
+}
+
+/*para pag nosotros*/
+
+@media screen and (max-width: 768px) {
+.principal-grid {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-auto-rows: auto;
+}
+
+.cuadro2,
+.cuadro6,
+.cuadro8 {
+grid-column: auto;
+grid-row: auto;
+}
+
+.principal-grid div h2 {
+font-size: 30px;
+}
+
+.principal-grid div h3 {
+font-size: 24px;
+}
+
+.principal-grid div p {
+font-size: 16px;
+}
+}
+
+/*pag promos*/
+
+@media (max-width: 768px) {
+.carousel-item div h4,
+.carousel-item .letras {
+font-size: 1.5rem;
+}
+
+.carousel-item .letras,
+.carousel-item .letras1{
+color: #8C0303;
+}
+
+.carousel-item div p,
+.carousel-item .letras1 {
+font-size: 1rem;
+}
+
+.carousel-inner img {
+height: 50vh;
+}
 }
