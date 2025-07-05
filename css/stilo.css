@@ -157,32 +157,6 @@ right: 15px;
 }
 /*pages contacto*/
 
-/*.formulario{
-    background-color:white;
-    font-size: 18px;
-    color: #8C0303;
-    padding: 10px;
-    margin: 5px;
-    width: 50%;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-}
-
-.btn{
-    background-color:#8C0303 ;
-    color: white;}
-
-.btn:hover{
-    background-color: #8C7870;
-}
-
-.logo{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-}*/
-
 .contenedor-formulario {
 display: flex;
 justify-content: center;
@@ -203,6 +177,18 @@ text-align: center;
     height: auto;
 }
 
+.col-logo h3{
+    color: #8C0303;
+    font-weight: bolder;
+    padding: 10px;
+
+}
+
+.col-logo p{
+    color: #8C0303;
+    font-weight: bolder;
+}
+
 .logo {
 max-width: 300%;
 height: auto;
@@ -214,14 +200,39 @@ flex: 1 1 400px;
 
 .formulario {
 background-color: white;
-font-size: 20px;
+font-size: 18px;
 color: #8C0303;
+font-weight: bolder;
 padding: 10px;
 display: flex;
 flex-direction: column;
 gap: 10px;
 }
 
+.form-control{
+color:#8C0303;
+border: 2px solid #8C0303;
+}
+
+.form-control:focus{
+background-color: white;
+border: 2px solid #8C0303;
+outline: none;
+box-shadow: none;
+}
+
+.btn{
+background-color: #8C0303;
+color: white;
+font-weight: bolder;
+}
+
+.btn:hover{
+background-color: #8C7870;
+color: #8C0303;
+font-weight: bolder;
+
+}
 
 /* main-- pages nosotros*/
 
@@ -276,7 +287,12 @@ grid-row: span 2;
     background-color:#E5E3D6;
 }
 
-
+.logo-grid{
+    width: 85% !important;
+    height: auto !important;
+    padding: 10px;
+    text-align: center;
+}
 
 
 /* main-- pages productos*/
