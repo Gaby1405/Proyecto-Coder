@@ -187,6 +187,7 @@ text-align: center;
 .col-logo p{
     color: #8C0303;
     font-weight: bolder;
+    font-size: 18px;
 }
 
 .logo {
@@ -470,6 +471,13 @@ padding: 10px;
 .img-container{
 display: flex;
 align-items: center;
+gap:10px;
+}
+
+.img-container2{
+display: flex;
+align-items: center;
+gap:10px
 }
 
 .linea2{  
