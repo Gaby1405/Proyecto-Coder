@@ -157,7 +157,7 @@ right: 15px;
 }
 /*pages contacto*/
 
-.formulario{
+/*.formulario{
     background-color:white;
     font-size: 18px;
     color: #8C0303;
@@ -165,7 +165,7 @@ right: 15px;
     margin: 5px;
     width: 50%;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
 }
 
@@ -175,6 +175,51 @@ right: 15px;
 
 .btn:hover{
     background-color: #8C7870;
+}
+
+.logo{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}*/
+
+.contenedor-formulario {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 30px;
+flex-wrap: wrap;
+background-color: white;
+}
+
+.col-logo {
+flex: 1 1 300px;
+text-align: center;
+}
+
+.col-logo img{
+    width: 300px;
+    height: auto;
+}
+
+.logo {
+max-width: 300%;
+height: auto;
+}
+
+.col-form {
+flex: 1 1 400px;
+}
+
+.formulario {
+background-color: white;
+font-size: 20px;
+color: #8C0303;
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 
