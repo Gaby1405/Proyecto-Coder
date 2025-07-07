@@ -99,6 +99,7 @@ header nav ul li {
     padding: 10px;
 }
 
+
 .reseñas .caja-reseñas{
     height: auto;
     background-color: #E5E3D6;
@@ -167,17 +168,6 @@ flex-wrap: wrap;
 background-color: white;
 }
 
-.formulario {
-background-color: white;
-font-size: 18px;
-color: #8C0303;
-font-weight: bolder;
-padding: 10px;
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
-
 .col-logo {
 flex: 1 1 300px;
 text-align: center;
@@ -203,6 +193,17 @@ text-align: center;
 
 .col-form {
 flex: 1 1 400px;
+}
+
+.formulario {
+background-color: white;
+font-size: 18px;
+color: #8C0303;
+font-weight: bolder;
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
 }
 
 .form-control{
@@ -289,7 +290,6 @@ grid-row: span 2;
     padding: 10px;
     text-align: center;
 }
-
 
 /* main-- pages productos*/
 
