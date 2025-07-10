@@ -15,7 +15,7 @@
 
     h1{
     font-size: 60px;
-    color: #8C0303;
+    color:$color-secundario;
     font-weight: bolder;
     padding: 20px;
     margin: 0;
@@ -26,7 +26,7 @@
     text-align: center; 
     font-size: 50px;
     font-weight: bolder;
-    color: #8C0303;
+    color: $color-secundario;
     padding: 20px;
     margin: 0;
 
@@ -35,7 +35,7 @@
 
 .sub-reseña{
     h2{
-    background-color:#8C7870;
+    background-color:$color-principal;
     font-size: 40px;
     color:white;
     font-weight: bolder;
@@ -49,7 +49,7 @@
 
     .caja-reseñas{
     height: auto;
-    background-color: #E5E3D6;
+    background-color: $color-terciario;
     gap:50px;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
     width: 250px;
     height: 500px;
     margin: 5px;
-    border: 2px solid #8C0303;
+    border: 2px solid $color-secundario;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@
     
 
     h2{
-    color:#8C0303;
+    color:$color-secundario;
     font-size: 20px;
 
     }
@@ -90,7 +90,7 @@
     height: auto;
     display: block;
     border-radius: 50%;
-    box-shadow: 0 4px 8px #8C0303;
+    box-shadow: 0 4px 8px $color-secundario;
     }
     }
     }
@@ -112,10 +112,10 @@ right: 15px;
 .prod1{
     h2{
     text-align: center ;
-    background-color:#E5E3D6;
+    background-color:$color-terciario;
     font-family:"Comic Relief", system-ui;
     font-size: 60px;
-    color: #8C0303;
+    color: $color-secundario;
     padding: 20px;
     margin: 5px;
     font-weight: bolder;
@@ -137,53 +137,14 @@ right: 15px;
 
 
     div{
-    width: 200px;
-    height: 350px;
-    border: 2px solid #8C0303;
-    text-align: center;
-    margin: 5px;
-    background-color:#E5E3D6;
-    transition: 0.3s;
-    
-
-    &:hover{
-        transform: scale(1.1);
+    @extend %tarjeta-producto;}    
+    a button {
+    @include button;
+    }
+    }
     }
 
-    img{
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    }
 
-    h3{
-    font-size: 15px;
-    color:#8C0303;
-    font-weight: bolder;
-    }
-
-    p{
-    font-size: 15px;
-    color: #8C0303;
-    font-weight:bold;
-    }
-
-    a {
-
-    button{
-    padding: 5px;
-    background-color: #8C0303;
-    color: white;
-
-    &:hover{
-    background-color: #8C7870;
-    color: #8C0303 ;
-     }
-    }
-   }
-  }
- }
-}
 
 //* PAG PROMO*//
 
@@ -205,13 +166,13 @@ height: auto;
 .carousel-item {
     div {
         h4 {
-        color: #8C0303;
+        color: $color-secundario;
         font-size: 2rem;
         font-weight: bolder;
         }
 
         p {
-        color: #8C0303;
+        color: $color-secundario;
         font-size: 1.25rem;
         font-weight: bolder;
         }
@@ -252,13 +213,13 @@ background-color: white;
     }
 
     h3 {
-    color: #8C0303;
+    color: $color-secundario;
     font-weight: bolder;
     padding: 10px;
     }
 
     p {
-    color: #8C0303;
+    color: $color-secundario;
     font-weight: bolder;
     font-size: 18px;
     }
@@ -271,7 +232,7 @@ flex: 1 1 400px;
 .formulario {
     background-color: white;
     font-size: 18px;
-    color: #8C0303;
+    color: $color-secundario;
     font-weight: bolder;
     padding: 10px;
     display: flex;
@@ -279,32 +240,22 @@ flex: 1 1 400px;
     gap: 10px;
 
     .form-control {
-    color: #8C0303;
-    border: 2px solid #8C0303;
+    color: $color-secundario;
+    border: 2px solid $color-secundario;
 
     &:focus {
     background-color: white;
-    border: 2px solid #8C0303;
+    border: 2px solid $color-secundario;
     outline: none;
     box-shadow: none;
         }
     }
 
     .btn {
-    background-color: #8C0303;
-    color: white;
-    font-weight: bolder;
-
-    &:hover {
-        background-color: #8C7870;
-        color: #8C0303;
-        font-weight: bolder;
-    }
-    }
+    @include button;
 }
 }
-
-
+}
 
 //*PAGES NOSOTROS*//
 
@@ -318,7 +269,7 @@ margin: 5px;
 
     .grid-item{
     position: relative;
-    background-color:#E5E3D6;
+    background-color:$color-terciario;
 
     .logo-grid{
     width: 85% !important;
@@ -338,20 +289,20 @@ margin: 5px;
         h2{
     text-align:center;
     font-size: 50px;
-    color: #8C0303;
+    color: $color-secundario;
     padding: 10px;
         }
 
         p{
     text-align: center;
     font-size: 18px;
-    color:  #8C0303;
+    color:  $color-secundario;
         }
 
         h3{
     text-align: center;
     font-size: 30px;
-    color:#8C0303;
+    color:$color-secundario;
         }
     }
 

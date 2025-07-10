@@ -1,0 +1,54 @@
+
+//* VARIABLES*//
+
+$color-principal:#8C7870;
+$color-secundario:#8C0303;
+$color-terciario:#E5E3D6;
+
+//*MIXIN*//
+
+@mixin button{
+padding: 5px;
+background-color:$color-secundario;
+color: white;
+font-weight: bolder;
+&:hover{
+background-color:$color-principal;
+color:$color-secundario;
+font-weight: bolder;
+}
+}
+
+//*EXTEND*//
+
+%tarjeta-producto {
+width: 200px;
+height: 350px;
+border: 2px solid #8C0303;
+text-align: center;
+margin: 5px;
+background-color: #E5E3D6;
+transition: 0.3s;
+
+&:hover {
+transform: scale(1.1);
+}
+
+img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+
+h3 {
+font-size: 15px;
+color: #8C0303;
+font-weight: bolder;
+}
+
+p {
+font-size: 15px;
+color: #8C0303;
+font-weight: bold;
+}
+}

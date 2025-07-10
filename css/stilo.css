@@ -219,6 +219,7 @@ box-shadow: none;
 }
 
 .btn{
+padding: 5px;
 background-color: #8C0303;
 color: white;
 font-weight: bolder;
@@ -238,7 +239,7 @@ display: grid;
 grid-template-columns: 1fr 2fr 1fr;
 grid-template-rows: 200px 250px 200px;
 gap:5px;
-grid-auto-rows: 200px;
+grid-auto-rows: auto;
 margin: 5px;
 }
 
@@ -339,7 +340,8 @@ grid-row: span 2;
 .prod2 div a button{
     padding: 5px;
     background-color: #8C0303;
-    color: white;    
+    color: white;
+    font-weight: bolder;    
 }
 
 .prod2 div a button:hover{
@@ -373,7 +375,6 @@ grid-row: span 2;
     height: 80vh;
     object-fit: cover;
 }
-
 
 .carousel-item div h4 {
     color: #8C0303;
@@ -531,6 +532,7 @@ height: 45px;
 }
 
 @media screen and (max-width: 768px) {
+    /*pag principal*/
     .caja-reseñas div {
         width: 45%;
     }
@@ -547,7 +549,7 @@ height: 45px;
         font-size: 30px;
         height: auto;
     }
-
+    /* footer */
     .cajaparte1footer,
     .parte2footer,
     .cajaparte3footer {
@@ -565,9 +567,76 @@ height: 45px;
         max-width: 300px;
         height: auto;
     }
+
+    /*pag productos*/
+    .prod1 h2 {
+        font-size: 40px;
+        padding: 15px;
+    }
+
+    /*pag nosotros*/
+    .principal-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
 }
 
+    .cuadro2,
+    .cuadro6,
+    .cuadro8 {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .principal-grid div h2 {
+        font-size: 30px;
+    }
+
+    .principal-grid div h3 {
+        font-size: 20px;
+    }
+
+    .principal-grid div p {
+        font-size: 14px;
+    }
+
+    .logo-grid {
+        width: 100% !important;
+        padding: 5px;
+    }
+
+/*pag promos*/
+    .carousel-item div h4,
+    .carousel-item .letras {
+        font-size: 1.5rem;
+}
+
+    .carousel-item .letras,
+    .carousel-item .letras1{
+        color: #8C0303 !important;
+}
+
+    .carousel-item div p,
+    .carousel-item .letras1 {
+        font-size: 1rem;
+}
+
+    .carousel-inner img {
+        height: 50vh;
+}
+    
+    .carousel-item div h4{
+        font-size: 1,5rem;
+    }
+
+    .carousel-item div p{
+        font-size: 1rem;
+    }
+    }
+
+
 @media screen and (max-width: 480px) {
+
+    /*pag principal*/
     .caja-reseñas div {
         width: 95%;
     }
@@ -579,7 +648,8 @@ height: 45px;
     .sub-reseña h2 {
         font-size: 24px;
     }
-
+    
+    /*footer*/
     .parte1footer h3,
     .parte2footer h3,
     .parte3footer h3 {
@@ -604,72 +674,33 @@ height: 45px;
         bottom: 5px;
         right: 10px;
     }
-}
 
-/*titulo de pag prod*/
-
-@media screen and (max-width: 768px) {
-    .prod1 h2 {
-        font-size: 40px;
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 480px) {
+    /*pag prod*/
     .prod1 h2 {
         font-size: 28px;
         padding: 10px;
     }
+
+    /*pag nosotros*/
+    .principal-grid div h2 {
+        font-size: 24px;
+    }
+    .principal-grid{
+        grid-auto-rows: auto;
+    }
+
+    .principal-grid div h3 {
+        font-size: 18px;
+    }
+
+    .principal-grid div p {
+        font-size: 12px;
+    }
+
+    .logo-grid {
+        width: 100% !important;
+        padding: 2px;
+    }
+
 }
 
-/*para pag nosotros*/
-
-@media screen and (max-width: 768px) {
-.principal-grid {
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-grid-auto-rows: auto;
-}
-
-.cuadro2,
-.cuadro6,
-.cuadro8 {
-grid-column: auto;
-grid-row: auto;
-}
-
-.principal-grid div h2 {
-font-size: 30px;
-}
-
-.principal-grid div h3 {
-font-size: 24px;
-}
-
-.principal-grid div p {
-font-size: 16px;
-}
-}
-
-/*pag promos*/
-
-@media (max-width: 768px) {
-.carousel-item div h4,
-.carousel-item .letras {
-font-size: 1.5rem;
-}
-
-.carousel-item .letras,
-.carousel-item .letras1{
-color: #8C0303;
-}
-
-.carousel-item div p,
-.carousel-item .letras1 {
-font-size: 1rem;
-}
-
-.carousel-inner img {
-height: 50vh;
-}
-}
